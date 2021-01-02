@@ -96,7 +96,7 @@ body{
 
 
   // Names in card 
-  .first-users{
+  .second{
     margin-bottom: 30px;
     text-align: center;
 
@@ -111,6 +111,11 @@ body{
       overflow: hidden;
       border-radius: 6px;
     }
+
+    .background-changer{
+      background-color: $Dark-Desaturated-Blue;
+    }
+
     // ------ Lines above card
     .name::before{
       content: '';
@@ -173,8 +178,8 @@ body{
   }
 
   // Bottom Section (After Overview-Today)
-  .second{
-    padding: 20px 20px 0px 20px;
+  .third{
+    padding: 20px 20px 0px 30px;
   }
   .overview{
     color: $Dark-Grayish-Blue;
@@ -182,16 +187,18 @@ body{
     margin-bottom: 20px;
   }
 
-  .view-info{
+  .page-overview{
+    padding: 20px;
+    position: relative;
+    border-radius: 5px;
+    background-color: $Light-Grayish-Blue;
     height: auto;
     width: 95%;
-    background-color: $Light-Grayish-Blue;
     margin-bottom: 15px;
-    border-radius: 5px;
 
-    .inner-info{
-      padding: 20px;
-      position: relative;
+  .second-background-changer{
+    background-color: $Dark-Desaturated-Blue;
+  }
 
       .views{
         font-weight: 700;
@@ -225,7 +232,5 @@ body{
       .bottom{
         margin: 0px 2px 2px 0px;
       }
-    }
   }
-
 }

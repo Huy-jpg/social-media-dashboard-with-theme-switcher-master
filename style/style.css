@@ -86,11 +86,11 @@ body {
     right: 0;
     background-color: #1e202a;
   }
-  .first-users {
+  .second {
     margin-bottom: 30px;
     text-align: center;
   }
-  .first-users .users {
+  .second .users {
     position: relative;
     height: auto;
     width: 95%;
@@ -100,7 +100,10 @@ body {
     overflow: hidden;
     border-radius: 6px;
   }
-  .first-users .name::before {
+  .second .background-changer {
+    background-color: #252a41;
+  }
+  .second .name::before {
     content: '';
     position: absolute;
     height: 5px;
@@ -108,88 +111,89 @@ body {
     top: 0;
     left: 0;
   }
-  .first-users .name1::before {
+  .second .name1::before {
     background-color: #198ff5;
   }
-  .first-users .name2::before {
+  .second .name2::before {
     background-color: #1ca0f2;
   }
-  .first-users .name3::before {
+  .second .name3::before {
     background: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
     background: linear-gradient(90deg, #fdc468, #df4996);
   }
-  .first-users .name4::before {
+  .second .name4::before {
     background-color: #c4032a;
   }
-  .first-users .name {
+  .second .name {
     color: #63687e;
     font-size: 12px;
     font-weight: 700;
     margin: 20px 0 16px 0;
   }
-  .first-users .social {
+  .second .social {
     height: 20px;
     margin-bottom: -5px;
     margin-right: 8px;
   }
-  .first-users .follow-num {
+  .second .follow-num {
     font-size: 4em;
     font-weight: 700;
     color: #1e202a;
   }
-  .first-users .follows {
+  .second .follows {
     font-weight: 400;
     letter-spacing: 7px;
     color: #63687e;
     margin-bottom: 25px;
     opacity: .7;
   }
-  .first-users .updates {
+  .second .updates {
     color: #1db489;
     font-weight: 700;
     font-size: 14px;
   }
-  .first-users .icon {
+  .second .icon {
     margin: 0px 5px 2px 0px;
   }
-  .first-users .yt {
+  .second .yt {
     color: #dc414c;
   }
-  .second {
-    padding: 20px 20px 0px 20px;
+  .third {
+    padding: 20px 20px 0px 30px;
   }
   .overview {
     color: #63687e;
     font-size: 24px;
     margin-bottom: 20px;
   }
-  .view-info {
-    height: auto;
-    width: 95%;
-    background-color: #f0f2fa;
-    margin-bottom: 15px;
-    border-radius: 5px;
-  }
-  .view-info .inner-info {
+  .page-overview {
     padding: 20px;
     position: relative;
+    border-radius: 5px;
+    background-color: #f0f2fa;
+    height: auto;
+    width: 95%;
+    margin-bottom: 15px;
   }
-  .view-info .inner-info .views {
+  .page-overview .second-background-changer {
+    background-color: #252a41;
+  }
+  .page-overview .views {
     font-weight: 700;
     color: #63687e;
     margin-bottom: 20px;
     position: relative;
   }
-  .view-info .inner-info .views .bottom-icon {
+  .page-overview .views .bottom-icon {
     position: absolute;
     right: 0;
   }
-  .view-info .inner-info .big-num {
+  .page-overview .big-num {
     font-size: 2em;
     font-weight: 700;
     color: #1e202a;
   }
-  .view-info .inner-info .percentage {
+  .page-overview .percentage {
     font-size: 14px;
     position: absolute;
     right: 5%;
@@ -197,10 +201,10 @@ body {
     font-weight: 700;
     color: #1db489;
   }
-  .view-info .inner-info .low {
+  .page-overview .low {
     color: #dc414c;
   }
-  .view-info .inner-info .bottom {
+  .page-overview .bottom {
     margin: 0px 2px 2px 0px;
   }
 }
