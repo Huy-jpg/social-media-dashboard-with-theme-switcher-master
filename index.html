@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <script src="https://kit.fontawesome.com/0ed091f7fa.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="first">
+      <!---- Heading ---->
+      <div class="heading">
+        <h1 class="header">Social Media Dashboard</h1>
+        <p class="follower">Total Followers: 23,004</p>
+      </div>
+
+
+      <!---- Toggle button ---->
+      <div class="switch">
+        <span>Dark Mode</span>
+        <button class="switcher"></button>
+      </div>
+
+      
+      <!---- First section ---->
+      <div class="first-users">
+        <div class="users">
+          <p class="name name1"><img src="images/icon-facebook.svg" alt="facebook" class="social">@nathanf</p>
+          <p class="follow-num">1987</p>
+          <p class="follows">Followers</p>
+          <p class="updates"><img src="images/icon-up.svg" class="up icon" alt="up">12 Today</p>
+        </div>
+        
+        <div class="users">
+          <p class="name name2"><img src="images/icon-twitter.svg" alt="twitter" class="social">@nathanf</p>
+          <p class="follow-num">1044</p>
+          <p class="follows">Followers</p>
+          <p class="updates"><img src="images/icon-up.svg" class="up icon" alt="up">99 Today</p>
+        </div>
+
+        <div class="users">
+          <p class="name name3"><img src="images/icon-instagram.svg" alt="instagram" class="social">@realnathanf</p>
+          <p class="follow-num">11k</p>
+          <p class="follows">Followers</p>
+          <p class="updates"><img src="images/icon-up.svg" class="up icon" alt="up">1099 Today</p>
+        </div>
+
+        <div class="users">
+          <p class="name name4"><img src="images/icon-youtube.svg" alt="youtube" class="social">Nathan F.</p>
+          <p class="follow-num">8239</p>
+          <p class="follows">Subscribers</p>
+          <p class="updates yt"><img src="images/icon-down.svg" class="down icon" alt="down">144 Today</p>
+        </div>
+      </div>
+    </section>
+
+    
+    <!---- Second Section ---->
+    <section class="second">
+      <h2 class="overview">Overview - Today</h2>
+      
+      <div class="view-info">
+        <div class="inner-info">
+          <p class="views">Page Views<img src="images/icon-facebook.svg" alt="facebook" class="bottom-icon"></p>
+          <span class="big-num">87</span>
+          <span class="percentage"><img src="images/icon-up.svg" class="bottom" alt="up">3%</span>
+        </div>
+      </div>
+
+      <div class="view-info">
+        <div class="inner-info">
+          <p class="views">Likes<img src="images/icon-facebook.svg" alt="facebook" class="bottom-icon"></p>
+          <span class="big-num">52</span>
+          <span class="percentage low"><img src="images/icon-down.svg" class="bottom" alt="down">2%</span>
+        </div>
+      </div>
+
+      <div class="view-info">
+        <div class="inner-info">
+          <p class="views">Likes<img src="images/icon-instagram.svg" alt="facebook" class="bottom-icon"></p>
+          <span class="big-num">5462</span>
+          <span class="percentage"><img src="images/icon-up.svg" class="bottom" alt="up">2257%</span>
+        </div>
+      </div>
+
+      <div class="view-info ">
+        <div class="inner-info">
+          <p class="views">Profile Views<img src="images/icon-instagram.svg" alt="facebook" class="bottom-icon"></p>
+          <span class="big-num">52k</span>
+          <span class="percentage"><img src="images/icon-up.svg" class="bottom" alt="up">1375%</span>
+        </div>
+      </div>
+
+      <div class="view-info">
+        <div class="inner-info">
+          <p class="views">Retweets<img src="images/icon-twitter.svg" alt="facebook" class="bottom-icon"></p>
+          <span class="big-num">117</span>
+          <span class="percentage"><img src="images/icon-up.svg" class="bottom" alt="up">303%</span>
+        </div>
+      </div>
+
+      <div class="view-info">
+        <div class="inner-info">
+          <p class="views">Likes<img src="images/icon-twitter.svg" alt="facebook" class="bottom-icon"></p>
+          <span class="big-num">507</span>
+          <span class="percentage"><img src="images/icon-up.svg" class="bottom" alt="up">553%</span>
+        </div>
+      </div>
+
+      <div class="view-info">
+        <div class="inner-info">
+          <p class="views">Likes<img src="images/icon-youtube.svg" alt="facebook" class="bottom-icon"></p>
+          <span class="big-num">107</span>
+          <span class="percentage low"><img src="images/icon-down.svg" class="bottom" alt="down">19%</span>
+        </div>
+      </div>
+
+      <div class="view-info">
+        <div class="inner-info">
+          <p class="views">Total Views<img src="images/icon-youtube.svg" alt="facebook" class="bottom-icon"></p>
+          <span class="big-num">1407</span>
+          <span class="percentage low"><img src="images/icon-down.svg" class="bottom" alt="down">12%</span>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

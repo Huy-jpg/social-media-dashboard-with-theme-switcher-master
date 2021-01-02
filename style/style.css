@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.after-change {
+  background-color: #1e202a;
+}
+
+/*------- Mobile Version -------*/
+@media (min-width: 375px) {
+  /*------- Heading --------*/
+  .first {
+    padding: 20px 20px 0px 30px;
+  }
+  .heading {
+    position: relative;
+    height: 60px;
+  }
+  .heading .header {
+    font-size: 22.5px;
+  }
+  .heading .follower {
+    font-size: 14px;
+    margin-top: 3px;
+    color: #63687e;
+    font-weight: 700;
+  }
+  .heading::after {
+    content: '';
+    position: absolute;
+    background-color: gray;
+    height: 2px;
+    width: 95%;
+    top: 100%;
+  }
+  /*------- Toggle Button --------*/
+  .switch {
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+  .switch span {
+    font-weight: 700;
+    color: #63687e;
+  }
+  .switch button {
+    position: absolute;
+    background-color: #aeb3cb;
+    padding: 10px 20px;
+    right: 5%;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    -webkit-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+  }
+  .switch button::before, .switch .active::before {
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+    top: 2.45px;
+    right: 3px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  .switch button:focus {
+    outline: none;
+  }
+  .switch .active {
+    background: linear-gradient(70deg, #378fe6, #3eda82);
+  }
+  .switch .active::before {
+    left: 3px;
+    right: 0;
+    background-color: #1e202a;
+  }
+  .first-users {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .first-users .users {
+    position: relative;
+    height: auto;
+    width: 95%;
+    background-color: #f0f2fa;
+    margin-bottom: 20px;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 6px;
+  }
+  .first-users .name::before {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .first-users .name1::before {
+    background-color: #198ff5;
+  }
+  .first-users .name2::before {
+    background-color: #1ca0f2;
+  }
+  .first-users .name3::before {
+    background: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
+    background: linear-gradient(90deg, #fdc468, #df4996);
+  }
+  .first-users .name4::before {
+    background-color: #c4032a;
+  }
+  .first-users .name {
+    color: #63687e;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 20px 0 16px 0;
+  }
+  .first-users .social {
+    height: 20px;
+    margin-bottom: -5px;
+    margin-right: 8px;
+  }
+  .first-users .follow-num {
+    font-size: 4em;
+    font-weight: 700;
+    color: #1e202a;
+  }
+  .first-users .follows {
+    font-weight: 400;
+    letter-spacing: 7px;
+    color: #63687e;
+    margin-bottom: 25px;
+    opacity: .7;
+  }
+  .first-users .updates {
+    color: #1db489;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .first-users .icon {
+    margin: 0px 5px 2px 0px;
+  }
+  .first-users .yt {
+    color: #dc414c;
+  }
+  .second {
+    padding: 20px 20px 0px 20px;
+  }
+  .overview {
+    color: #63687e;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .view-info {
+    height: auto;
+    width: 95%;
+    background-color: #f0f2fa;
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+  .view-info .inner-info {
+    padding: 20px;
+    position: relative;
+  }
+  .view-info .inner-info .views {
+    font-weight: 700;
+    color: #63687e;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .view-info .inner-info .views .bottom-icon {
+    position: absolute;
+    right: 0;
+  }
+  .view-info .inner-info .big-num {
+    font-size: 2em;
+    font-weight: 700;
+    color: #1e202a;
+  }
+  .view-info .inner-info .percentage {
+    font-size: 14px;
+    position: absolute;
+    right: 5%;
+    bottom: 20%;
+    font-weight: 700;
+    color: #1db489;
+  }
+  .view-info .inner-info .low {
+    color: #dc414c;
+  }
+  .view-info .inner-info .bottom {
+    margin: 0px 2px 2px 0px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

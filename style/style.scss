@@ -1,0 +1,231 @@
+@import './variables.scss';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: $font-fam;
+  transition: all .5s ease;
+}
+.after-change{
+  background-color: $Very-Dark-Blue;
+}
+
+/*------- Mobile Version -------*/
+
+@media (min-width: 375px){
+  /*------- Heading --------*/
+  .first{
+    padding: 20px 20px 0px 30px;
+  }
+
+  .heading{
+    position: relative;
+    height: 60px;
+    .header{
+      font-size: 22.5px;
+    }
+
+    .follower{
+      font-size: 14px;
+      margin-top: 3px;
+      color: $Dark-Grayish-Blue;
+      font-weight: $heavier-font;
+    }
+
+    &::after{
+      content: '';
+      position: absolute;
+      background-color: gray;
+      height: 2px;
+      width: 95%;
+      top: 100%;
+    }
+  }
+
+
+/*------- Toggle Button --------*/
+  .switch{
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 25px;
+
+    span{
+      font-weight: $heavier-font;
+      color: $Dark-Grayish-Blue;
+    }
+
+    button{
+      position: absolute;
+      background-color: $Light-Toggle;
+      padding: 10px 20px;
+      right: 5%;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all .1s ease-in-out;
+    }
+    button::before{
+      content: '';
+      position: absolute;
+      height: 15px;
+      width: 15px;
+      background-color: white;
+      border-radius: 50%;
+      top: 2.45px;
+      right: 3px;
+      transition: all .3s ease;
+    }
+    button:focus{
+      outline: none;
+    }
+
+    .active{
+      background: $Dark-Toggle;
+    }
+    .active::before{
+      @extend button::before;
+      left: 3px;
+      right: 0;
+      background-color: $Very-Dark-Blue;
+    }
+  }
+
+
+  // Names in card 
+  .first-users{
+    margin-bottom: 30px;
+    text-align: center;
+
+
+    .users{
+      position: relative;
+      height: auto;
+      width: 95%;
+      background-color: $Light-Grayish-Blue;
+      margin-bottom: 20px;
+      padding: 10px;
+      overflow: hidden;
+      border-radius: 6px;
+    }
+    // ------ Lines above card
+    .name::before{
+      content: '';
+      position: absolute;
+      height: 5px;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+    .name1::before{
+      background-color: $Facebook;
+    }
+    .name2::before{
+      background-color: $Twitter;
+    }
+    .name3::before{
+      background: $Instagram;
+    }
+    .name4::before{
+      background-color: $YouTube;
+    }
+
+    // Social Icon and names
+    .name{
+      color: $Dark-Grayish-Blue;
+      font-size: 12px;
+      font-weight: 700;
+      margin: 20px 0 16px 0;
+    }
+    .social{
+      height: 20px;
+      margin-bottom: -5px;
+      margin-right: 8px;
+    }
+
+    // Big numbers
+    .follow-num{
+      font-size: 4em;
+      font-weight: 700;
+      color: $Very-Dark-Blue;
+    }
+    .follows{
+      font-weight: 400;
+      letter-spacing: 7px;
+      color: $Dark-Grayish-Blue;
+      margin-bottom: 25px;
+      opacity: .7;
+    }
+    .updates{
+      color: $Lime-Green;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .icon{
+      margin: 0px 5px 2px 0px;
+    }
+    .yt{
+      color: $Bright-Red;
+    }
+  }
+
+  // Bottom Section (After Overview-Today)
+  .second{
+    padding: 20px 20px 0px 20px;
+  }
+  .overview{
+    color: $Dark-Grayish-Blue;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .view-info{
+    height: auto;
+    width: 95%;
+    background-color: $Light-Grayish-Blue;
+    margin-bottom: 15px;
+    border-radius: 5px;
+
+    .inner-info{
+      padding: 20px;
+      position: relative;
+
+      .views{
+        font-weight: 700;
+        color: $Dark-Grayish-Blue;
+        margin-bottom: 20px;
+        position: relative;
+
+        .bottom-icon{
+          position: absolute;
+          right: 0;
+        }
+      }
+
+      .big-num{
+        font-size: 2em;
+        font-weight: 700;
+        color: $Very-Dark-Blue;
+      }
+
+      .percentage{
+        font-size: 14px;
+        position: absolute;
+        right: 5%;
+        bottom: 20%;
+        font-weight: 700;
+        color: $Lime-Green;
+      }
+      .low{
+        color: $Bright-Red;
+      }
+      .bottom{
+        margin: 0px 2px 2px 0px;
+      }
+    }
+  }
+
+}
