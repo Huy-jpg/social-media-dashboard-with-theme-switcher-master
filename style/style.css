@@ -9,30 +9,270 @@ body {
   font-family: "Inter", sans-serif;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
+  padding: 30px 90px 30px 90px;
 }
 
 .after-change {
   background-color: #1e202a;
 }
 
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 0 130px;
+}
+
+.heading {
+  position: relative;
+}
+
+.heading .header {
+  font-size: 2em;
+}
+
+.heading .follower {
+  font-size: 1em;
+  color: #63687e;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.switch {
+  position: relative;
+  float: right;
+  margin: -30px 20px 0px 0px;
+  width: 160px;
+}
+
+.switch span {
+  font-weight: 700;
+  color: #63687e;
+}
+
+.switch .switcher {
+  position: absolute;
+  background-color: #aeb3cb;
+  padding: 10px 20px;
+  right: 5%;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+}
+
+.switch .switcher::before, .switch .active::before {
+  content: '';
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border-radius: 50%;
+  top: 2.45px;
+  right: 3px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.switch .switcher:focus {
+  outline: none;
+}
+
+.switch .active {
+  background: linear-gradient(70deg, #378fe6, #3eda82);
+}
+
+.switch .active::before {
+  left: 3px;
+  right: 0;
+  background-color: #1e202a;
+}
+
+.second {
+  margin: 40px 0px 30px 0px;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(290px, auto))[4];
+      grid-template-columns: repeat(4, minmax(290px, auto));
+  gap: 30px;
+}
+
+.second .users {
+  position: relative;
+  height: auto;
+  width: 300px;
+  background-color: #f0f2fa;
+  margin-bottom: 20px;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.second .background-changer {
+  background-color: #252a41;
+}
+
+.second .name::before {
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.second .name1::before {
+  background-color: #198ff5;
+}
+
+.second .name2::before {
+  background-color: #1ca0f2;
+}
+
+.second .name3::before {
+  background: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
+  background: linear-gradient(90deg, #fdc468, #df4996);
+}
+
+.second .name4::before {
+  background-color: #c4032a;
+}
+
+.second .name {
+  color: #63687e;
+  font-size: 1em;
+  font-weight: 700;
+  margin: 16px 0 16px 0;
+}
+
+.second .social {
+  height: 20px;
+  margin-bottom: -5px;
+  margin-right: 8px;
+}
+
+.second .follow-num {
+  font-size: 4em;
+  font-weight: 700;
+  color: #1e202a;
+}
+
+.second .follows {
+  font-weight: 400;
+  letter-spacing: 7px;
+  color: #63687e;
+  margin-bottom: 25px;
+  opacity: .7;
+}
+
+.second .updates {
+  color: #1db489;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.second .icon {
+  margin: 0px 5px 2px 0px;
+}
+
+.second .yt {
+  color: #dc414c;
+}
+
+.overview {
+  color: #63687e;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.inner-third {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, auto))[4];
+      grid-template-columns: repeat(4, minmax(300px, auto));
+  -ms-grid-rows: (minmax(180px, auto))[2];
+      grid-template-rows: repeat(2, minmax(180px, auto));
+  gap: 20px;
+}
+
+.inner-third .page-overview {
+  padding: 20px 20px 0px 20px;
+  position: relative;
+  border-radius: 5px;
+  background-color: #f0f2fa;
+  height: auto;
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+.inner-third .views {
+  font-weight: 700;
+  color: #63687e;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.inner-third .bottom-icon {
+  position: absolute;
+  right: 0;
+}
+
+.inner-third .big-num {
+  font-size: 2.4em;
+  font-weight: 700;
+  color: #1e202a;
+  margin-top: 30px;
+}
+
+.inner-third .percentage {
+  font-size: 14px;
+  position: absolute;
+  right: 5%;
+  bottom: 29%;
+  font-weight: 700;
+  color: #1db489;
+}
+
+.inner-third .low {
+  color: #dc414c;
+}
+
+.inner-third .bottom {
+  margin: 0px 2px 2px 0px;
+}
+
+.inner-third .background-changer {
+  background-color: #252a41;
+}
+
+.names-color-changer {
+  color: #8b97c6;
+}
+
 /*------- Mobile Version -------*/
-@media (min-width: 375px) {
+@media (max-width: 375px) {
+  body {
+    padding: 0px;
+  }
+  .container {
+    width: 375px;
+    margin: 0;
+    padding: 0;
+  }
   /*------- Heading --------*/
   .first {
     padding: 20px 20px 0px 30px;
   }
   .heading {
-    position: relative;
     height: 60px;
   }
   .heading .header {
-    font-size: 22.5px;
+    font-size: 20.5px;
   }
   .heading .follower {
     font-size: 14px;
-    margin-top: 3px;
-    color: #63687e;
-    font-weight: 700;
   }
   .heading::after {
     content: '';
@@ -44,13 +284,10 @@ body {
   }
   /*------- Toggle Button --------*/
   .switch {
-    position: relative;
+    width: auto;
+    float: none;
     margin-top: 15px;
     margin-bottom: 25px;
-  }
-  .switch span {
-    font-weight: 700;
-    color: #63687e;
   }
   .switch button {
     position: absolute;
@@ -59,36 +296,19 @@ body {
     right: 5%;
     border: none;
     border-radius: 30px;
-    cursor: pointer;
     -webkit-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
-  }
-  .switch button::before, .switch .active::before {
-    content: '';
-    position: absolute;
-    height: 15px;
-    width: 15px;
-    background-color: white;
-    border-radius: 50%;
-    top: 2.45px;
-    right: 3px;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
-  }
-  .switch button:focus {
-    outline: none;
-  }
-  .switch .active {
-    background: linear-gradient(70deg, #378fe6, #3eda82);
-  }
-  .switch .active::before {
-    left: 3px;
-    right: 0;
-    background-color: #1e202a;
   }
   .second {
     margin-bottom: 30px;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .second .users {
     position: relative;
@@ -103,109 +323,41 @@ body {
   .second .background-changer {
     background-color: #252a41;
   }
-  .second .name::before {
-    content: '';
-    position: absolute;
-    height: 5px;
-    width: 100%;
-    top: 0;
-    left: 0;
-  }
-  .second .name1::before {
-    background-color: #198ff5;
-  }
-  .second .name2::before {
-    background-color: #1ca0f2;
-  }
-  .second .name3::before {
-    background: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
-    background: linear-gradient(90deg, #fdc468, #df4996);
-  }
-  .second .name4::before {
-    background-color: #c4032a;
-  }
   .second .name {
-    color: #63687e;
     font-size: 12px;
-    font-weight: 700;
     margin: 20px 0 16px 0;
-  }
-  .second .social {
-    height: 20px;
-    margin-bottom: -5px;
-    margin-right: 8px;
-  }
-  .second .follow-num {
-    font-size: 4em;
-    font-weight: 700;
-    color: #1e202a;
-  }
-  .second .follows {
-    font-weight: 400;
-    letter-spacing: 7px;
-    color: #63687e;
-    margin-bottom: 25px;
-    opacity: .7;
-  }
-  .second .updates {
-    color: #1db489;
-    font-weight: 700;
-    font-size: 14px;
-  }
-  .second .icon {
-    margin: 0px 5px 2px 0px;
-  }
-  .second .yt {
-    color: #dc414c;
   }
   .third {
     padding: 20px 20px 0px 30px;
   }
-  .overview {
-    color: #63687e;
-    font-size: 24px;
-    margin-bottom: 20px;
+  .third .inner-third {
+    display: block;
   }
-  .page-overview {
+  .third .page-overview {
     padding: 20px;
-    position: relative;
-    border-radius: 5px;
-    background-color: #f0f2fa;
-    height: auto;
-    width: 95%;
-    margin-bottom: 15px;
   }
-  .page-overview .second-background-changer {
-    background-color: #252a41;
-  }
-  .page-overview .views {
+  .third .views {
     font-weight: 700;
     color: #63687e;
     margin-bottom: 20px;
     position: relative;
   }
-  .page-overview .views .bottom-icon {
-    position: absolute;
-    right: 0;
-  }
-  .page-overview .big-num {
+  .third .big-num {
     font-size: 2em;
     font-weight: 700;
     color: #1e202a;
   }
-  .page-overview .percentage {
-    font-size: 14px;
-    position: absolute;
-    right: 5%;
-    bottom: 20%;
-    font-weight: 700;
-    color: #1db489;
+  .third .percentage {
+    bottom: 23%;
   }
-  .page-overview .low {
+  .third .low {
     color: #dc414c;
   }
-  .page-overview .bottom {
-    margin: 0px 2px 2px 0px;
+  .third .background-changer {
+    background-color: #252a41;
+  }
+  .names-color-changer {
+    color: #8b97c6;
   }
 }
 /*# sourceMappingURL=style.css.map */
