@@ -22,6 +22,7 @@ body {
   padding: 0 50px;
 }
 
+/*------- Heading --------*/
 .heading {
   position: relative;
 }
@@ -37,6 +38,7 @@ body {
   margin-top: 5px;
 }
 
+/*------- Toggle Button --------*/
 .switch {
   position: relative;
   float: right;
@@ -286,18 +288,12 @@ body {
   .switch {
     width: auto;
     float: none;
-    margin-top: 15px;
-    margin-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
-  .switch button {
-    position: absolute;
-    background-color: #aeb3cb;
-    padding: 10px 20px;
-    right: 5%;
-    border: none;
+  .switch .switcher {
+    right: 0%;
     border-radius: 30px;
-    -webkit-transition: all .1s ease-in-out;
-    transition: all .1s ease-in-out;
   }
   .second {
     margin-bottom: 30px;
