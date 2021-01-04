@@ -9,7 +9,7 @@ body {
   font-family: "Inter", sans-serif;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
-  padding: 30px 90px 30px 90px;
+  padding: 30px 40px 30px 20px;
 }
 
 .after-change {
@@ -19,7 +19,7 @@ body {
 .container {
   width: 90%;
   margin: auto;
-  padding: 0 130px;
+  padding: 0 50px;
 }
 
 .heading {
